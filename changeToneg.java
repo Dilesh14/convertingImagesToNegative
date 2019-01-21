@@ -63,6 +63,6 @@ public class changeToneg extends Frame implements ActionListener{
 		//InputStream path = ClassLoader.getSystemResourceAsStream("./signal_hill.png");
 		//System.out.println(path);
 //		String l = path.toString();
-	new changeToneg(args.length==1 ? args[0] : "./signal_hill.png");
+	new changeToneg(args.length==1 ? args[0] : "");
 	}
 }
