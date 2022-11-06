@@ -51,7 +51,9 @@ public class changeToneg extends Frame implements ActionListener{
 					int r = 255 - clr.getRed();
 					int g = 255- clr.getGreen();
 					int b = 255 - clr.getBlue();
-					
+					r = r < 0 ? 0 : r;
+					g = g < 0 ? 0 : g;
+					b = b < 0 ? 0 : b;
 					target.image.setRGB(x,y,r<<16|g<<8|b);
 					target.repaint();
 					
